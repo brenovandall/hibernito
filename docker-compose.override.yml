@@ -1,0 +1,9 @@
+services:
+  hibernitodb:
+    container_name: hibernitodb
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Admin123
+    restart: always
+    ports:
+      - "1433:1433"

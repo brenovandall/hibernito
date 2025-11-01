@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Hibernito"
+                   namespace="Habernito.Domain">
+
+	<class name="Product" table="tb_cats">
+		<id name="Id">
+			<generator class="guid" />
+		</id>
+		<property name="Name" column="name" />
+		<property name="Category" column="category" />
+		<property name="Discontinued" column="discontinued" />
+	</class>
+
+</hibernate-mapping>

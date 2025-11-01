@@ -1,0 +1,3 @@
+services:
+  hibernitodb:
+    image: mcr.microsoft.com/mssql/server
