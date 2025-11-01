@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
                    assembly="Hibernito"
-                   namespace="Habernito.Domain">
+                   namespace="Hibernito.Domain">
 
 	<class name="Product" table="tb_cats">
 		<id name="Id">
