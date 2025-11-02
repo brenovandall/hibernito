@@ -54,5 +54,11 @@ namespace Hibernito.Repository
 
             return criteria.List<Product>();
         }
+
+        private ICollection<Product> Sample1(string category)
+        {
+            using ISession session = NHibernateHelper.OpenSession();
+            return [.. session.Query<Product>().Where(p => p.Category == category)];
+        }
     }
 }
